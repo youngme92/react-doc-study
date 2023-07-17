@@ -5,6 +5,7 @@ import MyButton from "./components/Mybuttton";
 import MyA from "./components/MyA";
 import MyProduct from "./components/MyProduct";
 import { useState } from "react";
+import Tictacto from "./components/Tictacto";
 
 const user = {
   name: "Hedy Lamarr",
@@ -23,7 +24,8 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-          {isLoggedIn ? (
+          <Tictacto />
+          {/* {isLoggedIn ? (
             <>
               <h1>{user.name}</h1>
             </>
@@ -32,7 +34,7 @@ export default function Home() {
           <MyButton count={count} onCLick={handleClick} />
           <MyButton count={count} onCLick={handleClick} />
           <MyButton count={count} onCLick={handleClick} />
-          <MyProduct />
+          <MyProduct /> */}
         </div>
       </main>
     </>
